@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ac-video-poster_848x480.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i2M-oU-1T5">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gn-6h-gTc">
+                                <rect key="frame" x="103" y="172" width="168" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.318455765" blue="0.2402261903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2af-Px-RtY">
+                                <rect key="frame" x="177" y="455" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Zmy-yl-PGY"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2af-Px-RtY" firstAttribute="top" secondItem="i2M-oU-1T5" secondAttribute="bottom" constant="58" id="0fy-S9-Lff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2af-Px-RtY" secondAttribute="bottom" constant="192" id="0zs-Re-k8a"/>
+                            <constraint firstItem="8Gn-6h-gTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="5L6-5P-hJI"/>
+                            <constraint firstItem="i2M-oU-1T5" firstAttribute="top" secondItem="8Gn-6h-gTc" secondAttribute="bottom" constant="56" id="AE2-X5-u7e"/>
+                            <constraint firstItem="i2M-oU-1T5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="HUE-YJ-hGH"/>
+                            <constraint firstItem="i2M-oU-1T5" firstAttribute="centerX" secondItem="2af-Px-RtY" secondAttribute="centerX" id="LdW-QK-J7M"/>
+                            <constraint firstItem="i2M-oU-1T5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fbI-vh-ikS"/>
+                            <constraint firstItem="8Gn-6h-gTc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iqF-7k-TwF"/>
+                            <constraint firstItem="8Gn-6h-gTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="152" id="nks-Pf-U0G"/>
+                            <constraint firstItem="8Gn-6h-gTc" firstAttribute="centerX" secondItem="i2M-oU-1T5" secondAttribute="centerX" id="taX-9A-TO5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ac-video-poster_848x480.jpg" width="848" height="480"/>
+    </resources>
+</document>
